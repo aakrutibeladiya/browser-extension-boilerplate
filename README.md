@@ -7,6 +7,8 @@
 
 ## folder structure
 
+root => extension
+
 1. lib => all external libraries (css + js)
 2. resources ==> assets (images)
 3. src ==> entire source code for extension
@@ -17,6 +19,9 @@
    5. partials ==> all html partials (containing google + popup + inject)
       ==> name prefix is given according to its type
    6. config.js ==> all config data
+4. \_locales => it is part of default localization but not in use
+5. css => browser action popup CSS only
+6. icon => extension icons
 
 ## how to change CSS for extension
 
