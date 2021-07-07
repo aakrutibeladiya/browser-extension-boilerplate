@@ -1,4 +1,4 @@
-## ext structure
+## folder structure
 
 1. lib => all external libraries (css + js)
 2. resources ==> assets (images)
