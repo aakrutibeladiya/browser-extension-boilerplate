@@ -2,7 +2,8 @@
 
 - html template with moustache.js
 - custom multi lang support(using i18n)
-- simple folder structure based on chrome browser eco system
+- simple folder structure based on chrome browser extension eco system
+- example for background action api use, browser action popup and inject script with popup injection on third party web page
 
 ## folder structure
 
