@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+
+    <link rel="stylesheet" href="/lib/bootstrap/bootstrap.min.css" />
+    <link rel="stylesheet" href="/css/main.css" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+
+    <script src="../../lib/mustache/mustache.js"></script>
+    <!-- <script src="../../lib/umbrella/umbrella.min.js"></script> -->
+    <script src="/lib/popper/popper.min.js"></script>
+    <script src="/lib/i18/i18next.min.js"></script>
+    <script src="/lib/bootstrap/bootstrap.min.js"></script>
+    <script src="../../lib/jquery/jquery.min.js"></script>
+    <script src="../commonJS/dataProvider.js"></script>
+    <script src="../commonJS/utils_global.js" />
+    <script src="/js/custom.js"></script>
+    <script src="../commonJS/apiService.js"></script>
+    <script src="sidebar.js"></script>
+
+    <title>__MSG_app_title__</title>
+  </head>
+
+  <body>
+    <div class="page-content">
+      <!-- main header -->
+      <header class="main-header">
+        <div class="container">
+          <div class="row align-items-center">
+            <div class="col-4 pr-0">
+              <h1>Welcome</h1>
+            </div>
+            <div class="col-8" id="popup_header"></div>
+          </div>
+        </div>
+      </header>
+      <!--End main header  -->
+
+      <!-- main-nav-tabs -->
+      <div class="container1">
+        <div class="main-nav-tabs">
+          <ul
+            class="main-nav nav nav-pills nav-fill"
+            id="pills-tab"
+            role="tablist"
+          >
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link active"
+                id="home-tab"
+                data-toggle="pill"
+                href="#home"
+                role="tab"
+                aria-controls="home"
+                aria-selected="true"
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-house-door-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M6.5 10.995V14.5a.5.5 0 0 1-.5.5H2a.5.5 0 0 1-.5-.5v-7a.5.5 0 0 1 .146-.354l6-6a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 .146.354v7a.5.5 0 0 1-.5.5h-4a.5.5 0 0 1-.5-.5V11c0-.25-.25-.5-.5-.5H7c-.25 0-.5.25-.5.495z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M13 2.5V6l-2-2V2.5a.5.5 0 0 1 .5-.5h1a.5.5 0 0 1 .5.5z"
+                  /></svg
+              ></a>
+            </li>
+            <!-- <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="settings-tab"
+                data-toggle="pill"
+                href="#settings"
+                role="tab"
+                aria-controls="settings"
+                aria-selected="false"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-gear-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M9.405 1.05c-.413-1.4-2.397-1.4-2.81 0l-.1.34a1.464 1.464 0 0 1-2.105.872l-.31-.17c-1.283-.698-2.686.705-1.987 1.987l.169.311c.446.82.023 1.841-.872 2.105l-.34.1c-1.4.413-1.4 2.397 0 2.81l.34.1a1.464 1.464 0 0 1 .872 2.105l-.17.31c-.698 1.283.705 2.686 1.987 1.987l.311-.169a1.464 1.464 0 0 1 2.105.872l.1.34c.413 1.4 2.397 1.4 2.81 0l.1-.34a1.464 1.464 0 0 1 2.105-.872l.31.17c1.283.698 2.686-.705 1.987-1.987l-.169-.311a1.464 1.464 0 0 1 .872-2.105l.34-.1c1.4-.413 1.4-2.397 0-2.81l-.34-.1a1.464 1.464 0 0 1-.872-2.105l.17-.31c.698-1.283-.705-2.686-1.987-1.987l-.311.169a1.464 1.464 0 0 1-2.105-.872l-.1-.34zM8 10.93a2.929 2.929 0 1 0 0-5.86 2.929 2.929 0 0 0 0 5.858z"
+                  />
+                </svg>
+              </a>
+            </li> -->
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="referEarn-tab"
+                data-toggle="pill"
+                href="#referEarn"
+                role="tab"
+                aria-controls="referEarn"
+                aria-selected="false"
+                ><svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-person-plus-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M1 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H1zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6zm7.5-3a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1H13V5.5a.5.5 0 0 1 .5-.5z"
+                  />
+                  <path
+                    fill-rule="evenodd"
+                    d="M13 7.5a.5.5 0 0 1 .5-.5h2a.5.5 0 0 1 0 1H14v1.5a.5.5 0 0 1-1 0v-2z"
+                  /></svg
+              ></a>
+            </li>
+            <li class="nav-item" role="presentation">
+              <a
+                class="nav-link"
+                id="myAccount-tab"
+                data-toggle="pill"
+                href="#myAccount"
+                role="tab"
+                aria-controls="myAccount"
+                aria-selected="false"
+              >
+                <svg
+                  width="1em"
+                  height="1em"
+                  viewBox="0 0 16 16"
+                  class="bi bi-person-fill"
+                  fill="currentColor"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    d="M3 14s-1 0-1-1 1-4 6-4 6 3 6 4-1 1-1 1H3zm5-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z"
+                  />
+                </svg>
+              </a>
+            </li>
+          </ul>
+          <div class="tab-content" id="pills-tabContent">
+            <div
+              class="tab-pane fade show active"
+              id="home"
+              role="tabpanel"
+              aria-labelledby="home-tab"
+            >
+              <!-- Home tab inner tabs -->
+              <div class="home-inner-tabs">
+                <div class="tab-content" id="pills-tabContent">
+                  <div class="home-nav-tabs text-center"></div>
+                  <div
+                    class="tab-pane fade show active"
+                    id="topStores"
+                    role="tabpanel"
+                    aria-labelledby="topStores-tab"
+                  >
+                    <!-- topStores tabContent -->
+                    <div class="home-inner-tabContent">
+                      <div class="main-search"></div>
+                      <div class="main-card card">
+                        <div class="card-body">
+                          <div
+                            class="
+                              top-store-list
+                              st-card-list
+                              list-unstyled
+                              mb-0
+                            "
+                            id="top-store-list"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End topStores tabContent -->
+                  </div>
+
+                  <div
+                    class="tab-pane fade"
+                    id="topOffers"
+                    role="tabpanel"
+                    aria-labelledby="topOffers-tab"
+                  >
+                    <!-- topOffers tabContent -->
+                    <div class="home-inner-tabContent">
+                      <div class="main-card card">
+                        <div class="card-body">
+                          <div
+                            class="
+                              st-card-list
+                              topOffers-list
+                              list-unstyled
+                              mb-0
+                            "
+                            id="top_offers_tab"
+                          ></div>
+                        </div>
+                      </div>
+                    </div>
+                    <!--End topOffers tabContent -->
+                  </div>
+
+                  <!-- storeDetails tabContent -->
+                  <div
+                    class="tab-pane fade show active"
+                    id="storeDetails-tab"
+                    role="tabpanel"
+                    aria-labelledby="storeDetails-tab"
+                  >
+                    <div class="home-inner-tabContent">
+                      <div class="" id="storeDetails">
+                        <!--End storeDetails tabContent 
+                      {{moustache added content}}
+                   -->
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Home tab inner tabs -->
+            </div>
+
+            <!-- settings tab content -->
+            <!-- <div
+              class="tab-pane fade"
+              id="settings"
+              role="tabpanel"
+              aria-labelledby="settings-tab"
+            >
+              <div class="settings-tab-wrapper" id="popup_settings_tab"></div>
+            </div> -->
+            <!--End settings tab content -->
+            <!-- myAccount tab content -->
+            <div
+              class="tab-pane fade"
+              id="myAccount"
+              role="tabpanel"
+              aria-labelledby="myAccount-tab"
+            >
+              <div id="my_account_tab"></div>
+            </div>
+            <!--End myAccount tab content -->
+            <!-- referEarn tab content -->
+            <div
+              class="tab-pane fade"
+              id="referEarn"
+              role="tabpanel"
+              aria-labelledby="referEarn-tab"
+            >
+              <div id="refer_n_earn_tab"></div>
+            </div>
+            <!--End referEarn tab content -->
+          </div>
+        </div>
+      </div>
+      <!--End main-nav-tabs -->
+    </div>
+  </body>
+</html>

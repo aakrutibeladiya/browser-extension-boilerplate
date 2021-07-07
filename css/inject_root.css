@@ -1,0 +1,10 @@
+:root {
+  --lb-primary-color: #6423d2;
+  --lb-secondary-color: #ff790e;
+  --lb-white-color: #ffffff;
+  --lb-black-color: #202124;
+  --lb-grey-color: #b2b2b2;
+  --lb-body-bg: #f8f8f8;
+  --lb-border-color: #eeeeee;
+  --lb-body-font: "Quicksand", sans-serif;
+}

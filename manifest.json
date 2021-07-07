@@ -1,0 +1,60 @@
+{
+  "name": "Browser Extension",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Your browser extension boilerplate",
+  "homepage_url": "https://www.google.com/",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "scripts": [
+      "src/bg/init.js",
+      "src/config.js",
+      "src/commonJS/dataProvider.js",
+      "src/commonJS/apiService.js",
+      "lib/i18/i18next.min.js",
+      "src/commonJS/utils_global.js"
+    ],
+    "persistent": true
+  },
+  "browser_action": {
+    "default_icon": "icons/icon19.png",
+    "default_title": "BrowserExtension",
+    "default_popup": "src/browser_action/browser_action.html"
+  },
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": [
+        "src/config.js",
+        "src/contentScripts/inject_events.js",
+        "lib/jquery/jquery.js",
+        "lib/i18/i18next.min.js",
+        "src/commonJS/utils_global.js",
+        "lib/mustache/mustache.js",
+        "src/contentScripts/get_token.js",
+        "src/contentScripts/inject_demo.js"
+      ],
+      "css": ["css/inject_root.css"]
+    }
+  ],
+  "permissions": [
+    "clipboardWrite",
+    "cookies",
+    "storage",
+    "tabs",
+    "http://*/*",
+    "https://*/*"
+  ],
+  "web_accessible_resources": [
+    "src/partials/*.*",
+    "./resources/*",
+    "src/contentScripts/*.*",
+    "src/commonJS/utils_global.js"
+  ],
+  "content_security_policy": "object-src 'self' 'unsafe-eval'; script-src 'self' 'unsafe-eval';"
+}
