@@ -1,0 +1,1 @@
+function render_demo_popup(e){render_template(e,"inject_demo_popup").then(function(e){$("body").append(e)})}

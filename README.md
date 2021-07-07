@@ -2,8 +2,8 @@
 
 - html template with moustache.js
 - custom multi lang support(using i18n)
-- simple folder structure based on chrome browser extension eco system
-- example for background action api use, browser action popup and inject script with popup injection on third party web page
+- simple and neat folder structure based on chrome browser extension eco system
+- example for chrome api use on background and content script files, browser action popup and inject script with popup injection on third party web page
 
 ## folder structure
 
@@ -34,3 +34,9 @@
 ## how to update translations/locale
 
 - all label strings are available at "commonJs/utils_global.js update string according to lang key
+
+## how to generate packaged/uglified code
+
+- run "npm i" at root directory
+- update gulpfile.js if you have changed folder names
+- run "npm run gulp build"

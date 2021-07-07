@@ -1,0 +1,188 @@
+{
+  "WelCome_title": {
+    "message": "Welcome to LarabackPro"
+  },
+  "Search": {
+    "message": "Search"
+  },
+  "app_title": {
+    "message": "LarabackPro"
+  },
+  "shop_now": {
+    "message": "Shop Now"
+  },
+  "top_stores": {
+    "message": "Top Stores"
+  },
+  "top_offers": {
+    "message": "Top Offers"
+  },
+  "store_details": {
+    "message": "Store Details"
+  },
+  "store_offers": {
+    "message": "Store Offers"
+  },
+  "show_more": {
+    "message": "Show More "
+  },
+  "refer_n_earn_title": {
+    "message": "Copy and send referral link to friends."
+  },
+  "or": {
+    "message": "or"
+  },
+  "how_it_works": {
+    "message": "How it works"
+  },
+  "your_referral_activities": {
+    "message": "Your Referral Activities"
+  },
+  "lifetime_earning": {
+    "message": "Lifetime Earning"
+  },
+  "hi": {
+    "message": "Hi"
+  },
+  "settings_title": {
+    "message": "Settings for the LarabackPro Shopping Assistant"
+  },
+  "you_are_sign_in_as": {
+    "message": "You are signed in as"
+  },
+  "not_you": {
+    "message": "Not You?"
+  },
+  "do_not_display_my_order": {
+    "message": "Do not display My Orders tab"
+  },
+  "do_not_display_activation": {
+    "message": "Do not display Activation Hover on these sites"
+  },
+  "do_not_display_product_search": {
+    "message": "Do not display Product Search Recommendations"
+  },
+  "allow_data_collection": {
+    "message": "Allow data collection. Sharing your usage data with LarabackPro helps us improve our products and services."
+  },
+  "settings_header": {
+    "message": "LarabackPro Setting"
+  },
+  "cashback": {
+    "message": "Cashback"
+  },
+  "total_earned": {
+    "message": "Total Earned"
+  },
+  "confirmed": {
+    "message": "Confirmed"
+  },
+  "pending": {
+    "message": "Pending"
+  },
+  "paid_out": {
+    "message": "Paid out"
+  },
+  "cashback_payment": {
+    "message": "Cashback Payment"
+  },
+  "missing_payment": {
+    "message": "Missing Payment"
+  },
+  "log_out": {
+    "message": "Logout"
+  },
+  "member_since": {
+    "message": "Member Since"
+  },
+  "copy_link": {
+    "message": "Copy Link"
+  },
+  "you_saved": {
+    "message": "You saved"
+  },
+  "working_code": {
+    "message": "Working Code"
+  },
+  "continue_to_check_out": {
+    "message": "Continue to Checkout"
+  },
+  "activate_later": {
+    "message": "Activate Later"
+  },
+  "you_getting": {
+    "message": "You're getting "
+  },
+  "shopping_trip": {
+    "message": "Shopping Trip"
+  },
+  "ok_close_now": {
+    "message": "Okay, Close Now"
+  },
+  "coupons": {
+    "message": "Coupons"
+  },
+  "available": {
+    "message": "Available"
+  },
+  "cashback_available": {
+    "message": "Cashback Available"
+  },
+  "coupon_codes": {
+    "message": "Coupon Codes"
+  },
+  "reward_rates": {
+    "message": "Rewards Rate"
+  },
+  "reward": {
+    "message": "Reward"
+  },
+  "apply_coupons": {
+    "message": "Apply Coupons"
+  },
+  "ignore_n_close": {
+    "message": "Ignore and close"
+  },
+  "coupon_apply_progress_message": {
+    "message": "LarabackPro is automatically trying the best coupon codes for you."
+  },
+  "applying_promo_code": {
+    "message": "Applying promo code"
+  },
+  "testing_code": {
+    "message": "Testing Code :"
+  },
+  "see_if_coupons_work_for_new": {
+    "message": "See if coupons work for new items in you cart."
+  },
+  "re_apply_coupon": {
+    "message": "Re - Apply Coupons"
+  },
+  "dont_show_this_again": {
+    "message": "Don't show this again for 1 hour"
+  },
+  "login": {
+    "message": "LOGIN"
+  },
+  "activate": {
+    "message": "Activate"
+  },
+  "copied": {
+    "message": "Copied"
+  },
+  "apply_coupon_failed": {
+    "message": "sorry! no coupon found for this order"
+  },
+  "from_app_name": {
+    "message": "from LarabackPro"
+  },
+  "you_ll_get": {
+    "message": "You'll get"
+  },
+  "referral_msg": {
+    "message": " each order of users that register using your link."
+  },
+  "cashback_rates": {
+    "message": "Cashback Rate"
+  }
+}
