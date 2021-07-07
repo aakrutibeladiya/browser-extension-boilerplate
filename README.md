@@ -1,3 +1,5 @@
+# Browser extension boilerplate
+
 ## features
 
 - html template with moustache.js
@@ -5,7 +7,7 @@
 - simple and neat folder structure based on chrome browser extension eco system
 - example for chrome api use on background and content script files, browser action popup and inject script with popup injection on third party web page
 
-## folder structure
+## Holder structure
 
 root => extension
 
@@ -23,7 +25,7 @@ root => extension
 5. css => browser action popup CSS only
 6. icon => extension icons
 
-## how to change CSS for extension
+## How to change CSS for extension
 
 - extension works on 2 separate environment
 - 1. browser_action popup
@@ -31,16 +33,16 @@ root => extension
 - 2. injected script or popup
   - all css is inline written in partials file
 
-## how to change HTML for extension
+## How to change HTML for extension
 
 - for sidebar/main popup skeleton /src/browser_action/browser_action.
 - check for the partial file in "/src/partials".
 
-## how to update translations/locale
+## How to update translations/locale
 
 - all label strings are available at "commonJs/utils_global.js update string according to lang key
 
-## how to generate packaged/uglified code
+## How to generate packaged/uglified code
 
 - run "npm i" at root directory
 - update gulpfile.js if you have changed folder names
