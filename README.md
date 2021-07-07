@@ -2,14 +2,17 @@
 
 ## features
 
-- html template with moustache.js
+- HTML template with moustache.js
 - custom multi lang support(using i18n)
 - simple and neat folder structure based on chrome browser extension eco system
-- example for chrome api use on background and content script files, browser action popup and inject script with popup injection on third party web page
+- example for
+  - chrome api use on background and content script files,
+  - browser action popup,
+  - inject script with popup injection on third party web page
 
 ## Holder structure
 
-root => extension
+extension
 
 1. lib => all external libraries (css + js)
 2. resources ==> assets (images)
@@ -27,7 +30,7 @@ root => extension
 
 ## How to change CSS for extension
 
-- extension works on 2 separate environment
+- Extension works on 2 separate environment
 - 1. browser_action popup
   - css is written in /css/main.css file
 - 2. injected script or popup
@@ -35,12 +38,12 @@ root => extension
 
 ## How to change HTML for extension
 
-- for sidebar/main popup skeleton /src/browser_action/browser_action.
-- check for the partial file in "/src/partials".
+- For sidebar/main popup skeleton /src/browser_action/browser_action.
+- Check for the partial file in "/src/partials".
 
 ## How to update translations/locale
 
-- all label strings are available at "commonJs/utils_global.js update string according to lang key
+- All label strings are available at "commonJs/utils_global.js update string according to lang key.
 
 ## How to generate packaged/uglified code
 
