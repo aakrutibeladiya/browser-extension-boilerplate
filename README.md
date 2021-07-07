@@ -1,3 +1,9 @@
+## features
+
+- html template with moustache.js
+- custom multi lang support(using i18n)
+- simple folder structure based on chrome browser eco system
+
 ## folder structure
 
 1. lib => all external libraries (css + js)
