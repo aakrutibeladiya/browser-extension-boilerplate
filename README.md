@@ -1,6 +1,6 @@
 # Browser extension boilerplate
 
-## features
+## Features
 
 - HTML template with moustache.js
 - custom multi lang support(using i18n)
@@ -10,7 +10,7 @@
   - browser action popup,
   - inject script with popup injection on third party web page
 
-## Holder structure
+## Folder structure
 
 extension
 
